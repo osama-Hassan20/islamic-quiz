@@ -1,6 +1,6 @@
 const List hujjOne =
 [
-  {' أركان الحج '
+  {
     "id": 1,
     "question": "الحج هو الركن ...... في الإسلام",
     "options": [

@@ -1,4 +1,3 @@
-
 import 'list_of_data.dart';
 
 List<List> mixFaithQuestions =[

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:islamic_quiz/screens/homa_screen.dart';
+import 'package:islamic_quiz/screens/home_screen/homa_screen.dart';
 import 'package:islamic_quiz/screens/openning_screen.dart';
+import 'package:islamic_quiz/screens/previous_home.dart';
 import 'package:islamic_quiz/shared/components/constant.dart';
 import 'package:islamic_quiz/shared/network/local/cache_helper.dart';
 
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
         //     textDirection: TextDirection.ltr,
         //   child: startWidget,
         // ),
-        home:  HomeScreen(),
+        home:  PreviousHome(),
       ),
     );
   }

@@ -9,10 +9,12 @@ import '../shared/styles/colors.dart';
 class QuizScreen extends StatelessWidget {
   final int indexx;
   final int id;
+  final int idH;
 
   const QuizScreen({super.key,
     required this.indexx,
     required this.id,
+    required this.idH,
   });
 
 
@@ -27,7 +29,7 @@ class QuizScreen extends StatelessWidget {
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(mixAllNamesQuestions[id][indexx]),
+            Text(mixAllTotalNamesQuestions[idH][id][indexx]),
             const SizedBox(width: 5,),
             Container(
               height: 30,
@@ -64,7 +66,7 @@ class QuizScreen extends StatelessWidget {
                         ),
                         children: [
                           TextSpan(
-                            text: "/${mixAllQuestions[id][indexx].length}",
+                            text: "/${mixAllTotalQuestions[idH][id][indexx].length}",
                             style: Theme.of(context)
                                 .textTheme
                                 .headlineSmall
@@ -90,14 +92,15 @@ class QuizScreen extends StatelessWidget {
                     child: Column(
                       children: [
                         QuestionCard(
-                          question: mixAllQuestions[id][indexx][index],
+                          question: mixAllTotalQuestions[idH][id][indexx][index],
                           indexxx: indexx,
                           id: id,
+                          idH: idH,
                         ),
                       ],
                     ),
                   ),
-                  itemCount: mixAllQuestions[id][indexx].length),
+                  itemCount: mixAllTotalQuestions[idH][id][indexx].length),
             ),
             const SizedBox(
               height: 20,

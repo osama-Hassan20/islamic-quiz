@@ -1,5 +1,5 @@
 class Question {
-  int id, answer;
+  final int id, answer;
   final String question;
   final List<String> options;
 

@@ -1,7 +1,7 @@
 import '../../../models/questions.dart';
 import 'data.dart';
 
-List<Question> questionsOne = lectureOne
+List<Question> questionsPurityHOne = purityHOne
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -11,7 +11,8 @@ List<Question> questionsOne = lectureOne
 
 
 
-List<Question> questionsTwo = lectureTwo
+
+List<Question> questionsPurityHTwo = purityHTwo
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -21,7 +22,7 @@ List<Question> questionsTwo = lectureTwo
 
 
 
-List<Question> questionsThree = lectureThree
+List<Question> questionsPurityHThree = purityHThree
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -31,7 +32,7 @@ List<Question> questionsThree = lectureThree
 
 
 
-List<Question> questionsFour = lectureFour
+List<Question> questionsPurityHFour = purityHFour
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -41,7 +42,7 @@ List<Question> questionsFour = lectureFour
 
 
 
-List<Question> questionsFive = lectureFive
+List<Question> questionsPurityHFive = purityHFive
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -51,7 +52,7 @@ List<Question> questionsFive = lectureFive
 
 
 
-List<Question> questionsSix = lectureSix
+List<Question> questionsPurityHSix = purityHSix
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -61,7 +62,7 @@ List<Question> questionsSix = lectureSix
 
 
 
-List<Question> questionsSeven = lectureSeven
+List<Question> questionsPurityHSeven = purityHSeven
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -71,7 +72,7 @@ List<Question> questionsSeven = lectureSeven
 
 
 
-List<Question> questionsEight = lectureEight
+List<Question> questionsPurityHEight = purityHEight
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -81,7 +82,7 @@ List<Question> questionsEight = lectureEight
 
 
 
-List<Question> questionsNine = lectureNine
+List<Question> questionsPurityHNine = purityHNine
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -91,7 +92,7 @@ List<Question> questionsNine = lectureNine
 
 
 
-List<Question> questionsTen = lectureTen
+List<Question> questionsPurityHTen = purityHTen
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -101,7 +102,7 @@ List<Question> questionsTen = lectureTen
 
 
 
-List<Question> questionsEleven = lectureEleven
+List<Question> questionsPurityHEleven = purityHEleven
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -111,7 +112,7 @@ List<Question> questionsEleven = lectureEleven
 
 
 
-List<Question> questionsTwelve = lectureTwelve
+List<Question> questionsPurityHTwelve = purityHTwelve
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -121,7 +122,7 @@ List<Question> questionsTwelve = lectureTwelve
 
 
 
-List<Question> questionsThirteen = lectureThirteen
+List<Question> questionsPurityHThirteen = purityHThirteen
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -131,7 +132,7 @@ List<Question> questionsThirteen = lectureThirteen
 
 
 
-List<Question> questionsFourteen = lectureFourteen
+List<Question> questionsPurityHFourteen = purityHFourteen
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -141,7 +142,7 @@ List<Question> questionsFourteen = lectureFourteen
 
 
 
-List<Question> questionsFifteen = lectureFifteen
+List<Question> questionsPurityHFifteen = purityHFifteen
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -151,7 +152,7 @@ List<Question> questionsFifteen = lectureFifteen
 
 
 
-List<Question> questionsSixteen = lectureSixteen
+List<Question> questionsPurityHSixteen = purityHSixteen
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -161,7 +162,7 @@ List<Question> questionsSixteen = lectureSixteen
 
 
 
-List<Question> questionsSeventeen = lectureSeventeen
+List<Question> questionsPurityHSeventeen = purityHSeventeen
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -171,7 +172,7 @@ List<Question> questionsSeventeen = lectureSeventeen
 
 
 
-List<Question> questionsEighteen = lectureEighteen
+List<Question> questionsPurityHEighteen = purityHEighteen
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -181,7 +182,7 @@ List<Question> questionsEighteen = lectureEighteen
 
 
 
-List<Question> questionsNineteen = lectureNineteen
+List<Question> questionsPurityHNineteen = purityHNineteen
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -191,7 +192,7 @@ List<Question> questionsNineteen = lectureNineteen
 
 
 
-List<Question> questionsTwenty = lectureTwenty
+List<Question> questionsPurityHTwenty = purityHTwenty
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -201,7 +202,7 @@ List<Question> questionsTwenty = lectureTwenty
 
 
 
-List<Question> questionsTwentyOne = lectureTwentyOne
+List<Question> questionsPurityHTwentyOne = purityHTwentyOne
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -211,7 +212,7 @@ List<Question> questionsTwentyOne = lectureTwentyOne
 
 
 
-List<Question> questionsTwentyTwo = lectureTwentyTwo
+List<Question> questionsPurityHTwentyTwo = purityHTwentyTwo
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -221,7 +222,7 @@ List<Question> questionsTwentyTwo = lectureTwentyTwo
 
 
 
-List<Question> questionsTwentyThree = lectureTwentyThree
+List<Question> questionsPurityHTwentyThree = purityHTwentyThree
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -231,7 +232,7 @@ List<Question> questionsTwentyThree = lectureTwentyThree
 
 
 
-List<Question> questionsTwentyFour = lectureTwentyFour
+List<Question> questionsPurityHTwentyFour = purityHTwentyFour
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -241,7 +242,7 @@ List<Question> questionsTwentyFour = lectureTwentyFour
 
 
 
-List<Question> questionsTwentyFive = lectureTwentyFive
+List<Question> questionsPurityHTwentyFive = purityHTwentyFive
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -251,7 +252,7 @@ List<Question> questionsTwentyFive = lectureTwentyFive
 
 
 
-List<Question> questionsTwentySix = lectureTwentySix
+List<Question> questionsPurityHTotal = purityHTotal
     .map((question) => Question(
     id: question['id'],
     question: question['question'],
@@ -260,11 +261,11 @@ List<Question> questionsTwentySix = lectureTwentySix
     .toList();
 
 
-
-List<Question> questionsTwentySeven = lectureTwentySeven
-    .map((question) => Question(
-    id: question['id'],
-    question: question['question'],
-    answer: question['answer_index'],
-    options: question['options']))
-    .toList();
+//
+// List<Question> questionsPurityHTwentySeven = purityHTwentySeven
+//     .map((question) => Question(
+//     id: question['id'],
+//     question: question['question'],
+//     answer: question['answer_index'],
+//     options: question['options']))
+//     .toList();

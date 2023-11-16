@@ -1,12 +1,10 @@
 
-import 'data.dart';
 import 'list_of_data.dart';
 
 List<List> mixHujjQuestions =[
   questionsHujjOne,
   questionsHujjTwo,
   questionsHujjThree,
-
 ];
 
 

@@ -7,20 +7,22 @@ import '../shared/components/components.dart';
 import '../shared/components/constant.dart';
 import '../shared/components/widgets/button_app.dart';
 import '../shared/styles/colors.dart';
-import 'homa_screen.dart';
+import 'home_screen/homa_screen.dart';
 
 class ScoreScreen extends StatelessWidget {
   final int index;
   final int id;
+  final int idH;
 
   ScoreScreen({
     required this.index,
     required this.id,
+    required this.idH,
   });
 
   @override
   Widget build(BuildContext context) {
-    double score = BlocProvider.of<QuestionsCubit>(context).numOfCorrectAns / mixAllQuestions[id][index].length;
+    double score = BlocProvider.of<QuestionsCubit>(context).numOfCorrectAns / mixAllTotalQuestions[idH][id][index].length;
     String grade = getGrade(score);
 
     return Scaffold(
@@ -109,7 +111,7 @@ class ScoreScreen extends StatelessWidget {
                       Expanded(
                         child: Container(
                           child: Text(
-                            'Wrong Answer: ${mixAllQuestions[id][index].length - BlocProvider.of<QuestionsCubit>(context).numOfCorrectAns}',
+                            'Wrong Answer: ${mixAllTotalQuestions[idH][id][index].length - BlocProvider.of<QuestionsCubit>(context).numOfCorrectAns}',
                             textAlign: TextAlign.start,
                             style: TextStyle(
                               color: Colors.red,
@@ -149,7 +151,7 @@ class ScoreScreen extends StatelessWidget {
                 ButtonApp(
                     text: 'to home',
                   onTap: (){
-                    navigateAndFinish(context, HomeScreen());
+                    // navigateAndFinish(context, HomeScreen());
                   },
                 ),
               ],

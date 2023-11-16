@@ -5,10 +5,11 @@ import '../../../models/questions.dart';
 import 'option.dart';
 
 class QuestionCard extends StatelessWidget {
-  const QuestionCard({super.key, required this.question, required this.id, required this.indexxx});
+  const QuestionCard({super.key, required this.question, required this.id,required this.idH, required this.indexxx});
   final Question question;
   final int indexxx;
   final int id;
+  final int idH;
 
   @override
   Widget build(BuildContext context) {
@@ -39,7 +40,7 @@ class QuestionCard extends StatelessWidget {
               question: question,
               onTap: () {
                 BlocProvider.of<QuestionsCubit>(context)
-                    .checkAnswer(question, index, question.id, context,indexxx,id);
+                    .checkAnswer(question, index, question.id, context,indexxx,id,idH);
               }),
         ),
 

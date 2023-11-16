@@ -9,10 +9,12 @@ import '../shared/styles/colors.dart';
 class NextHome extends StatelessWidget {
   final String title;
   final int id;
+  final int idH;
 //namesOfTheLecturesOfFaith
   const NextHome({super.key,
     required this.title,
     required this.id,
+    required this.idH,
   });
 
   // Widget cardItem (Question question,BuildContext context)=>Column(
@@ -57,7 +59,7 @@ class NextHome extends StatelessWidget {
           itemBuilder: (context , index)=>InkWell(
             onTap: (){//counterSelectQuestion
               BlocProvider.of<QuestionsCubit>(context).counterSelectQuestion();
-              navigateTo(context, QuizScreen(indexx: index,id: id,));
+              navigateTo(context, QuizScreen(indexx: index,id: id,idH: idH,));
             },
             child: Container(
               padding: const EdgeInsets.all(20),
@@ -72,7 +74,7 @@ class NextHome extends StatelessWidget {
                 children: [
                   Expanded(
                     child: Text(
-                      mixAllNamesQuestions[id][index],
+                      mixAllTotalNamesQuestions[idH][id][index],
                       textAlign: TextAlign.end,
                       style: TextStyle(
                           color: Colors.white,
@@ -93,7 +95,7 @@ class NextHome extends StatelessWidget {
               ),
             ),
           ),
-        itemCount: mixAllNamesQuestions[id].length,
+        itemCount: mixAllTotalNamesQuestions[idH][id].length,
       ),
     );
   }

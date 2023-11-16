@@ -28,7 +28,7 @@ class QuestionsCubit extends Cubit<QuestionsState> {
     selectQuestion ++;
   }
   checkAnswer(
-      Question question, int selectedIndex, int id, BuildContext context,int index,idd) {
+      Question question, int selectedIndex, int id, BuildContext context,int index,idd,idH) {
     if(id ==1) {
       numOfCorrectAns = 0;
     }
@@ -48,10 +48,10 @@ class QuestionsCubit extends Cubit<QuestionsState> {
     }
 
     Future.delayed(const Duration(seconds: 1), () {
-      nextQuestion(context,index,idd);
+      nextQuestion(context,index,idd,idH);
 
       // selectQuestion = id == questions.length ? 1 : id + 1;
-      selectQuestion = id == mixAllQuestions[idd][index].length ? 1 : id + 1;
+      selectQuestion = id == mixAllTotalQuestions[idH][idd][index].length ? 1 : id + 1;
       emit(QuestionChange());
     });
   }
@@ -72,8 +72,8 @@ class QuestionsCubit extends Cubit<QuestionsState> {
   // }
 
 
-  nextQuestion(BuildContext context,int index,idd) {
-    if (selectQuestion != mixAllQuestions[idd][index].length)
+  nextQuestion(BuildContext context,int index,idd,idH) {
+    if (selectQuestion != mixAllTotalQuestions[idH][idd][index].length)
     {
       isAnswered = false;
       reset = false;
@@ -87,7 +87,7 @@ class QuestionsCubit extends Cubit<QuestionsState> {
     {
       Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) =>  ScoreScreen(index: index,id: idd,)),
+        MaterialPageRoute(builder: (context) =>  ScoreScreen(index: index,id: idd,idH: idH,)),
       );
       isAnswered = false;
       reset = false;

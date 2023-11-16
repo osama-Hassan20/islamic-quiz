@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import '../shared/components/components.dart';
 import '../shared/components/constant.dart';
-import 'homa_screen.dart';
+import 'home_screen/homa_screen.dart';
 
 class LoginScreen extends StatelessWidget {
   LoginScreen({super.key});
@@ -76,12 +76,12 @@ class LoginScreen extends StatelessWidget {
 
                       ElevatedButton(
                         onPressed: () {
-                          if (Formkey.currentState!.validate()) {
-                            Navigator.pushReplacement(context,
-                                MaterialPageRoute(builder: (context) {
-                                  return HomeScreen();
-                                },),);
-                          }
+                          // if (Formkey.currentState!.validate()) {
+                          //   Navigator.pushReplacement(context,
+                          //       MaterialPageRoute(builder: (context) {
+                          //         return HomeScreen();
+                          //       },),);
+                          // }
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.indigo,

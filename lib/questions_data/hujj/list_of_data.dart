@@ -1,4 +1,5 @@
 import '../../models/questions.dart';
+import '../info_quran/data.dart';
 import 'data.dart';
 
 List<Question> questionsHujjOne = hujjOne
